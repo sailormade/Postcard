@@ -59,6 +59,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="f57-hl-3V1">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="237" y="151" width="147" height="69"/>
+                                </variation>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rXY-61-02w">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -94,33 +100,38 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="23" y="85" width="331" height="58"/>
+                                    <rect key="frame" x="23" y="72" width="331" height="58"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="f57-hl-3V1">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLX-EH-Rht">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="237" y="151" width="147" height="69"/>
+                                    <rect key="frame" x="23" y="151" width="206" height="21"/>
                                 </variation>
-                            </imageView>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="f57-hl-3V1"/>
                                 <exclude reference="rXY-61-02w"/>
                                 <exclude reference="i1W-iv-dhk"/>
                                 <exclude reference="HoY-L5-96H"/>
                                 <exclude reference="Ayd-h8-BU4"/>
-                                <exclude reference="f57-hl-3V1"/>
+                                <exclude reference="cLX-EH-Rht"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="f57-hl-3V1"/>
                                 <include reference="rXY-61-02w"/>
                                 <include reference="i1W-iv-dhk"/>
                                 <include reference="HoY-L5-96H"/>
                                 <include reference="Ayd-h8-BU4"/>
-                                <include reference="f57-hl-3V1"/>
+                                <include reference="cLX-EH-Rht"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,6 +140,7 @@
                         <outlet property="enterNameTextField" destination="rXY-61-02w" id="DgC-sq-k6c"/>
                         <outlet property="mailButton" destination="HoY-L5-96H" id="ZUT-Vu-73u"/>
                         <outlet property="messageLabel" destination="Ayd-h8-BU4" id="Kav-BB-GWL"/>
+                        <outlet property="nameLabel" destination="cLX-EH-Rht" id="PgP-bt-rzn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
